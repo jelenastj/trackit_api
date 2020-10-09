@@ -1,5 +1,6 @@
 # README
 
 Expense Tracker version 1 Backend - Rails
--run rails bundle install
--run rails server -p 3001
+
+1.run rails bundle install
+2.run rails server -p 3001
