@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
+  resources :users, only: [:index, :show]
   resources :sessions, only: [:create]
   resources :registrations, only: [:create]
-  resources :transactions, only: [:index, :show]
+  resources :transactions
   delete :logout, to: "sessions#logout"
   get :logged_in, to: "sessions#logged_in"
   root to: "static#home"

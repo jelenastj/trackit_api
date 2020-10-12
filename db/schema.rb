@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 2020_10_08_235635) do
   enable_extension "plpgsql"
 
   create_table "transactions", force: :cascade do |t|
+    t.integer "user_id"
     t.string "name"
     t.datetime "date"
     t.string "category"
